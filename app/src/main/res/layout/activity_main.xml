@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context="com.example.msc.cards.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="War"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+
+    <LinearLayout
+        android:id="@+id/computerlinearLayout"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/computerhandlinearLayout"
+        tools:layout_editor_absoluteX="8dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/computerhandlinearLayout"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="8dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/decklinearLayout"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/images"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/playerhandlinearLayout"
+        tools:layout_editor_absoluteX="31dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:text="Player: 0     Computer: 0"
+        app:layout_constraintTop_toBottomOf="@+id/computerlinearLayout"
+        app:layout_constraintVertical_bias="0.215"
+        tools:layout_editor_absoluteX="118dp" />
+
+    <Button
+        android:id="@+id/btn_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="31dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="Deal"
+        app:layout_constraintLeft_toRightOf="@+id/decklinearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/playerhandlinearLayout"
+        android:layout_marginStart="128dp" />
+
+    <LinearLayout
+        android:id="@+id/playerlinearLayout"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/computerlinearLayout"
+        tools:layout_editor_absoluteX="8dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerhandlinearLayout"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/playerlinearLayout"
+        tools:layout_editor_absoluteX="8dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:text="Press deal to start"
+        app:layout_constraintBottom_toTopOf="@+id/playerlinearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="163dp" />
+
+</android.support.constraint.ConstraintLayout>
